@@ -300,6 +300,7 @@
             <div class="o-layout__item u-1/1">
               <div class="">
                 <h4>Layout Items &amp; Widths</h4>
+                <p>If you are coming from a framework such as Bootstrap. The ".o-page" class is our <b>container</b>. The ".o-layout" class is our <b>row</b>, the ".o-layout__item" class is our <b>column</b> and widths are our <b>column widths</b>. Try adding @s, @m, @l to widths for responsive columns at different breakpoints. <br>i.e, ".o-layout__item  u-1/6@l  u-1/3@m  u-1/1@s".</p>
               </div>
             </div>
           </div>
@@ -307,7 +308,7 @@
 
         <!-- u-1/1 -->
         <div class="o-page u-mb-1">
-          <div class="o-layout o-layout--middle">
+          <div class="o-layout">
 
             <div class="o-layout__item u-1/1">
               <p class="u-pb--25 u-mb-none">whole</p>
@@ -344,7 +345,7 @@
 
         <!-- u-1/2 -->
         <div class="o-page u-mb-1">
-          <div class="o-layout o-layout--middle">
+          <div class="o-layout">
 
             <div class="o-layout__item u-1/1">
               <p class="u-pb--25 u-mb-none">halves</p>
@@ -391,7 +392,7 @@
 
         <!-- u-1/3 -->
         <div class="o-page u-mb-1">
-          <div class="o-layout o-layout--middle">
+          <div class="o-layout">
 
             <div class="o-layout__item u-1/1">
               <p class="u-pb--25 u-mb-none">thirds</p>
@@ -420,7 +421,7 @@
 
         <!-- u-1/4 -->
         <div class="o-page u-mb-1">
-          <div class="o-layout o-layout--middle">
+          <div class="o-layout">
 
             <div class="o-layout__item u-1/1">
               <p class="u-pb--25 u-mb-none">fourths</p>
@@ -455,7 +456,7 @@
 
         <!-- u-1/5 -->
         <div class="o-page u-mb-1">
-          <div class="o-layout o-layout--middle">
+          <div class="o-layout">
 
             <div class="o-layout__item u-1/1">
               <p class="u-pb--25 u-mb-none">fifths</p>
@@ -496,7 +497,7 @@
 
         <!-- u-1/6 -->
         <div class="o-page u-mb-1">
-          <div class="o-layout o-layout--middle">
+          <div class="o-layout">
 
             <div class="o-layout__item u-1/1">
               <p class="u-pb--25 u-mb-none">sixths</p>
@@ -543,7 +544,7 @@
 
         <!-- u-1/12 -->
         <div class="o-page u-mb-1">
-          <div class="o-layout--tiny o-layout--middle">
+          <div class="o-layout--tiny">
 
             <div class="o-layout__item u-1/1">
               <p class="u-pb--25 u-mb-none">twelfths</p>
@@ -644,7 +645,7 @@
 
         <!-- layout default -->
         <div class="o-page u-mb-1">
-          <div class="o-layout o-layout--middle">
+          <div class="o-layout">
 
             <div class="o-layout__item u-1/1">
               <p class="u-pb--25 u-mb-none">.o-layout</p>
@@ -673,7 +674,7 @@
 
         <!-- layout flush -->
         <div class="o-page u-mb-1">
-          <div class="o-layout--flush o-layout--middle">
+          <div class="o-layout--flush">
 
             <div class="o-layout__item u-1/1">
               <p class="u-pb--25 u-mb-none">.o-layout--flush</p>
@@ -702,7 +703,7 @@
 
         <!-- layout tiny -->
         <div class="o-page u-mb-1">
-          <div class="o-layout--tiny o-layout--middle">
+          <div class="o-layout--tiny">
 
             <div class="o-layout__item u-1/1">
               <p class="u-pb--25 u-mb-none">.o-layout--tiny</p>
@@ -731,7 +732,7 @@
 
         <!-- small -->
         <div class="o-page u-mb-1">
-          <div class="o-layout--small o-layout--middle">
+          <div class="o-layout--small">
 
             <div class="o-layout__item u-1/1">
               <p class="u-pb--25 u-mb-none">.o-layout--small</p>
@@ -760,7 +761,7 @@
 
         <!-- large -->
         <div class="o-page u-mb-1">
-          <div class="o-layout--large o-layout--middle">
+          <div class="o-layout--large">
 
             <div class="o-layout__item u-1/1">
               <p class="u-pb--25 u-mb-none">.o-layout--large</p>
@@ -789,7 +790,7 @@
 
         <!-- Huge -->
         <div class="o-page u-mb-1">
-          <div class="o-layout--huge o-layout--middle">
+          <div class="o-layout--huge">
 
             <div class="o-layout__item u-1/1">
               <p class="u-pb--25 u-mb-none">.o-layout--huge</p>
@@ -1403,6 +1404,8 @@
 
           <div class="o-layout__item u-1/1">
             <h2>Helpers</h2>
+            <p>The Inuit CSS framework comes with a huge array of helpers to help us build a component. We would like to try and avoid using custom CSS as much as possible. Treat your CSS like lego bricks. Build it by adding classes with the CSS helpers that you have available. If something is too complex to build with helpers then custom CSS is acceptable.</p>
+            <p>A lot of our helper classes also work at different brekpoints. Try adding @s, @m, @l for responsive helpers. i.e ".u-fl@s"</p>
           </div>
 
           <div class="o-layout__item u-1/1">
@@ -1459,31 +1462,31 @@
             <img src="img/itcss-triangle.jpg">
           </div>
 
-          <div class="o-layout__item u-1/1">
+          <div class="o-layout__item u-1/1 u-mb-1">
             <p>ITCSS or Inverted Triangle CSS is a Scalable and Maintainable CSS Architecture and Methodology for large projects. It is not a framework but a collection of principles and metrics by which developers should group and order their CSS in order to keep it scalable, elegant, logical, and manageable.</p>
             <p>We also use BEMIT (BEM + ITCSS = BEMIT) and prefix our classes in a codebase with a certain string in order to explain to developers what kind of job it does. This naming allows us to ascertain exactly what kind of job a class might have, how and where we might be able to reuse it (if at all), whether or not we can modify it, and much more.</p>
           </div>
 
-          <div class="o-layout__item u-1/1">
-            <h5 class="u-mb--25">Objects</h5>
+          <div class="o-layout__item u-1/1 u-mb-1">
+            <h5>Objects</h5>
             <p class="u-mb-none"><b>c- </b></p>
             <p>Signify that something is an <b>Object</b>, and that it may be used in any number of unrelated contexts to the one you can currently see it in. Making modifications to these types of class could potentially have knock-on effects in a lot of other unrelated places. Tread carefully.</p>
           </div>
 
-          <div class="o-layout__item u-1/1">
-            <h5 class="u-mb--25">Components</h5>
+          <div class="o-layout__item u-1/1 u-mb-1">
+            <h5>Components</h5>
             <p class="u-mb-none"><b>o- </b></p>
             <p>Signify that something is a <b>Component.</b> This is a concrete, implementation-specific piece of UI. All of the changes you make to its styles should be detectable in the context you're currently looking at. Modifying these styles should be safe and have no side effects.</p>
           </div>
 
-          <div class="o-layout__item u-1/1">
-            <h5 class="u-mb--25">Utilities/Trumps</h5>
+          <div class="o-layout__item u-1/1 u-mb-1">
+            <h5>Utilities/Trumps</h5>
             <p class="u-mb-none"><b>u- </b></p>
             <p>Signify that this class is a <b>Utility</b> class. It has a very specific role (often providing only one declaration) and should not be bound onto or changed. It can be reused and is not tied to any specific piece of UI.</p>
           </div>
 
           <div class="o-layout__item u-1/1">
-            <h5 class="u-mb--25">Hacks</h5>
+            <h5>Hacks</h5>
             <p class="u-mb-none"><b>_ </b></p>
             <p>Signify that this class is the worst of the worst-a <b>hack!</b> Sometimes, although incredibly rarely, we need to add a class in our markup in order to force something to work. If we do this, we need to let others know that this class is less than ideal, and hopefully temporary (i.e. do not bind onto this).</p>
             <p>Hacks should be placed in the _shame.scss file.</p>
