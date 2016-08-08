@@ -211,7 +211,7 @@
 
               <p>The layout system is a powerful, flexible, highly advanced evolution of the traditional grid system.</p>
 
-              <p>It is based on inline-blocks. That means three things: 1. We don't have to use floats and clearfixes. Yay! 2. We can easily flip the layout, center it by just adding one class. 3. Since we use inline-block we unfortunately can't have spaces between the columns. We need to remove white space by inserting an empty comment between layout items. Refer to code examples below for more information.</p>
+              <p>It is based on inline-blocks. That means three things: 1. We don't have to use floats, offsets and clearfixes. Yay! 2. We can easily flip the layout, center it by just adding one class. 3. Since we use inline-block we unfortunately can't have spaces between the columns. We need to remove white space by inserting an empty comment between layout items. Refer to code examples below for more information.</p>
 
             </div>
 
@@ -299,8 +299,9 @@
           <div class="o-layout">
             <div class="o-layout__item u-1/1">
               <div class="">
-                <h4>Layout Items &amp; Widths</h4>
-                <p>If you are coming from a framework such as Bootstrap. The ".o-page" class is our <b>container</b>. The ".o-layout" class is our <b>row</b>, the ".o-layout__item" class is our <b>column</b> and widths are our <b>column widths</b>. Try adding @s, @m, @l to widths for responsive columns at different breakpoints. <br>i.e, ".o-layout__item  u-1/6@l  u-1/3@m  u-1/1@s".</p>
+                <h4>Layout items &amp; widths</h4>
+                <p>If you are coming from a framework such as Bootstrap. The ".o-page" class is our <b>container</b>. The ".o-layout" class is our <b>row</b>, the ".o-layout__item" class is our <b>column</b> and widths are our <b>column widths</b>.</p>
+                <p>Try adding @s, @m, @l to widths for responsive columns at different breakpoints. i.e, ".o-layout__item  u-1/6@l  u-1/3@m  u-1/1@s".</p>
               </div>
             </div>
           </div>
@@ -1065,26 +1066,34 @@
             </div>
 
             <div class="o-layout__item u-1/4 u-tc">
-              <div class="u-bgcol-g4 u-p--25">
-                <p class="u-mb-none">Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass house.</p>
+              <div class="u-bgcol-g4 u-1/1">
+                <div class="u-p--25">
+                  <p class="u-mb-none">Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass house.</p>
+                </div>
               </div>
             </div><!--
 
          --><div class="o-layout__item u-1/4 u-tc">
-              <div class="u-bgcol-g4 u-p--25">
-                <p class="u-mb-none">Do you see any Teletubbies in here?</p>
+              <div class="u-bgcol-g4 u-1/1">
+                <div class="u-p--25">
+                  <p class="u-mb-none">Do you see any Teletubbies in here?</p>
+                </div>
               </div>
             </div><!--
 
          --><div class="o-layout__item u-1/4 u-tc">
-              <div class="u-bgcol-g4 u-p--25">
-                <p class="u-mb-none">Normally, both your asses would be dead as fried chicken, but you happen to pull this while I'm in a transitional period.</p>
+              <div class="u-bgcol-g4 u-1/1">
+                <div class="u-p--25">
+                  <p class="u-mb-none">Normally, both your asses would be dead as fried chicken, but you happen to pull this while I'm in a transitional period.</p>
+                </div>
               </div>
             </div><!--
 
          --><div class="o-layout__item u-1/4 u-tc">
-              <div class="u-bgcol-g4 u-p--25">
-                <p class="u-mb-none">I've had it with these snakes on this plane.</p>
+              <div class="u-bgcol-g4 u-1/1">
+                <div class="u-p--25">
+                  <p class="u-mb-none">I've had it with these snakes on this plane.</p>
+                </div>
               </div>
             </div>
 
@@ -1509,7 +1518,8 @@
           <div class="o-layout__item u-1/1">
             <h5>Documentation</h5>
             <ul class="o-list-block---25 u-mb-2">
-              <li class="o-list-block__item"><a href="http://aleutcss.github.io/documentation/">Aluet CSS documentation</a></li>
+              <li class="o-list-block__item"><a href="https://github.com/inuitcss">Inuit CSS</a></li>
+              <li class="o-list-block__item"><a href="http://aleutcss.github.io/documentation/">Aluet CSS (Fork of Inuit) documentation</a></li>
               <li class="o-list-block__item"><a href="http://csshugs.github.io/inuit-kitchen-sink/">CSSHugs' Inuit CSS Kitchen Sink</a></li>
             </ul>
 
@@ -1523,6 +1533,32 @@
             <ul class="o-list-block---25 u-mb-2">
               <li class="o-list-block__item"><a href="https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/">Xfive ITCSS Article</a></li>
             </ul>
+          </div>
+
+          <div class="o-layout__item u-1/1">
+            <h5>Tech</h5>
+          </div>
+
+          <div class="o-layout__item u-1/12">
+            <a href="http://inuitcss.com/"><img src="img/inuit.png"></a>
+          </div><!--
+       --><div class="o-layout__item u-1/12">
+            <a href="http://itcss.io/"><img src="img/itcss.png"></a>
+          </div><!--
+       --><div class="o-layout__item u-1/12">
+            <a href="http://gulpjs.com/"><img src="img/gulp.png"></a>
+          </div><!--
+       --><div class="o-layout__item u-1/12">
+            <a href="https://vuejs.org/"><img src="img/vue.png"></a>
+          </div><!--
+       --><div class="o-layout__item u-1/12">
+            <a href="https://webpack.github.io/"><img src="img/webpack.png"></a>
+          </div><!--
+       --><div class="o-layout__item u-1/12">
+            <a href="http://sass-lang.com/"><img src="img/sass.png"></a>
+          </div><!--
+       --><div class="o-layout__item u-1/12">
+            <a href="http://handlebarsjs.com/"><img src="img/handlebars.png"></a>
           </div>
 
         </div>

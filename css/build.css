@@ -2156,22 +2156,22 @@ body {
       padding-left: 60px; } }
   @media screen and (max-width: 767px) {
     .hld .o-layout--huge {
-      margin-left: 42px; } }
+      margin-left: -42px; } }
   @media screen and (max-width: 767px) and (orientation: landscape) {
     .hld .o-layout--huge {
-      margin-left: 42px; } }
+      margin-left: -42px; } }
   @media screen and (min-width: 768px) {
     .hld .o-layout--huge {
-      margin-left: 66px; } }
+      margin-left: -66px; } }
   @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1023px) {
     .hld .o-layout--huge {
-      margin-left: 66px; } }
+      margin-left: -66px; } }
   @media screen and (min-width: 1024px) {
     .hld .o-layout--huge {
-      margin-left: 90px; } }
+      margin-left: -90px; } }
   @media screen and (min-width: 1280px) {
     .hld .o-layout--huge {
-      margin-left: 90px; } }
+      margin-left: -90px; } }
   @media screen and (max-width: 767px) {
     .hld .o-layout--huge > .o-layout__item {
       padding-left: 42px; } }
