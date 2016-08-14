@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,6 +34,7 @@
               <li class="u-mr--5"><a href="#buttons">Buttons</a></li>
               <li class="u-mr--5"><a href="#typography">Typography</a></li>
               <li class="u-mr--5"><a href="#spacing">Spacing</a></li>
+              <li class="u-mr--5"><a href="#hovers">Hovers</a></li>
               <li class="u-mr--5"><a href="#helpers">Helpers</a></li>
               <li class="u-mr--5"><a href="#itcss">ITCSS</a></li>
               <li class="u-mr--5"><a href="#resources">Resources</a></li>
@@ -41,8 +43,6 @@
 
         </div>
       </section>
-
-
 
 
 
@@ -1104,10 +1104,8 @@
 
 
 
-
-
-
       <section class="o-page u-mb-3" id="typography">
+
         <div class="o-layout">
 
           <div class="o-layout__item u-1/1 u-mb-1">
@@ -1122,6 +1120,9 @@
             <h4>.u-h4 - 30px</h4>
             <h5>.u-h5 - 24px</h5>
             <h6>.u-h6 - 20px</h6>
+
+            <p class="">Unfortunately the designers couldn't decide on what font-sizes to use, so we also have font-size helpers. i.e, .u-fs-32 (font-size 32px), .u-fs-120 (font-size 120px). If possible do not use these. We should only use h1-h6 font-sizes. If there is a font-size that isn't a h1-h6 font-size value in your design, let the designer know and see if a default font-size can be used instead.</p>
+            <p>Font sizes, like colour palettes, should be limited, preset and non-arbitrary. As explained in <a href="http://csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/">this blog post.</a></p>
           </div>
 
           <div class="o-layout__item u-1/1 u-mb-1">
@@ -1145,11 +1146,12 @@
 
           <div class="o-layout__item u-1/1 u-mb-1">
             <h4>Font family</h4>
-            <p class="u-ff-general">.u-ff-general - Source Sans Pro</p>
-            <p class="u-ff-brand-reg">.u-ff-brand-reg - Gibson-Regular</p>
-            <p class="u-ff-brand-lt">.u-ff-brand-lt - Gibson-Light</p>
-            <p class="u-ff-brand-home-reg">.u-ff-brand-home-reg - Zona Pro Regular</p>
-            <p class="u-ff-brand-home-lt">.u-ff-brand-home-lt - Zona Pro Light</p>
+            <p>.u-ff-general - <span class="u-ff-general">Source Sans Pro</span></p>
+            <p>.u-ff-brand-lt - <span class="u-ff-brand-lt">Gibson-Light</span></p>
+            <p>.u-ff-brand-reg - <span class="u-ff-brand-reg">Gibson-Regular</span></p>
+            <p>.u-ff-brand-home-hl - <span class="u-ff-brand-home-hl">Zona Pro Hairline</span></p>
+            <p>.u-ff-brand-home-lt - <span class="u-ff-brand-home-lt">Zona Pro Light</span></p>
+            <p>.u-ff-brand-home-reg - <span class="u-ff-brand-home-reg">Zona Pro Regular</span></p>
           </div>
 
           <div class="o-layout__item u-1/1">
@@ -1161,17 +1163,16 @@
               <li class="o-list-block__item"><b>.u-tuc</b> - text-transform: uppercase;</li>
               <li class="o-list-block__item"><b>.u-tlc</b> - text-transform: lowercase;</li>
               <li class="o-list-block__item"><b>.u-tcc</b> - text-transform: capitalize;</li>
-              <li class="o-list-block__item"><span class="u-fw-1">.u-fw-1</span> - font-weight: 300;</li>
-              <li class="o-list-block__item"><span class="u-fw-2">.u-fw-2</span> - font-weight: 400;</li>
-              <li class="o-list-block__item"><span class="u-fw-3">.u-fw-3</span> - font-weight: 600;</li>
-              <li class="o-list-block__item"><span class="u-fw-4">.u-fw-4</span> - font-weight: 700;</li>
+              <li class="o-list-block__item"><b>.u-fw-1</b> - <span class="u-fw-1">font-weight: 300;</span></li>
+              <li class="o-list-block__item"><b>.u-fw-2</b> - <span class="u-fw-2">font-weight: 400;</span></li>
+              <li class="o-list-block__item"><b>.u-fw-3</b> - <span class="u-fw-3">font-weight: 600;</span></li>
+              <li class="o-list-block__item"><b>.u-fw-4</b> - <span class="u-fw-4">font-weight: 700;</span></li>
             </ul>
           </div>
 
         </div>
+
       </section>
-
-
 
 
 
@@ -1242,7 +1243,6 @@
 
 
 
-
       <section class="u-mb-2" id="spacing">
         <div class="o-page u-mb-2">
           <div class="o-layout">
@@ -1277,6 +1277,7 @@
                 <li class="o-list-block__item"><b>.u-mv</b> - Vertical margin (margin-top and margin-bottom)</li>
                 <li class="o-list-block__item"><b>.u-mh</b> - Horizontal margin (margin-left and margin-right)</li>
                 <li class="o-list-block__item"><b>.u-mt--25-neg</b> - negative margin</li>
+                <li class="o-list-block__item"><b>.u-m-auto</b> - margin 0 auto</li>
               </ul>
             </div><!--
 
@@ -1406,8 +1407,6 @@
 
 
 
-
-
       <section class="o-page u-mb-3" id="helpers">
         <div class="o-layout">
 
@@ -1461,6 +1460,24 @@
 
 
 
+      <section class="o-page u-mb-3" id="hovers">
+        <div class="o-layout">
+
+          <div class="o-layout__item u-1/1">
+            <h2>Hovers</h2>
+            <p>A collection of hover utilities.</p>
+          </div>
+
+          <div class="o-layout__item u-1/3">
+            <p class="u-pb--25 u-mb-none">.u-hov-zoom</p>
+            <div class="u-hov-zoom">
+              <img src="http://www.fillmurray.com/700/400">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
 
 
       <section class="o-page u-mb-3" id="itcss">
@@ -1503,8 +1520,6 @@
 
         </div>
       </section>
-
-
 
 
 
