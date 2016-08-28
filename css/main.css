@@ -25,3 +25,10 @@
   src: url("../fonts/zona-pro/ZonaPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/zona-pro/ZonaPro-Regular.woff") format("woff"), url("../fonts/zona-pro/ZonaPro-Regular.ttf") format("truetype"), url("../fonts/zona-pro/ZonaPro-Regular.svg#50903ccde4896339dc5dfd301348fe14") format("svg");
   font-style: normal;
   font-weight: 400; }
+
+@font-face {
+  font-family: 'Zona Pro SemiBold';
+  src: url("../fonts/zona-pro/ZonaPro-SemiBold.eot");
+  src: url("../fonts/zona-pro/ZonaPro-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/zona-pro/ZonaPro-SemiBold.woff") format("woff"), url("../fonts/zona-pro/ZonaPro-SemiBold.ttf") format("truetype"), url("../fonts/zona-pro/ZonaPro-SemiBold.svg#50903ccde4896339dc5dfd301348fe14") format("svg");
+  font-style: normal;
+  font-weight: 400; }

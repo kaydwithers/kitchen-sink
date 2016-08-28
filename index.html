@@ -20,15 +20,12 @@
 
     <div class="hld">
 
-      <section class="o-page u-mb-2 u-mt-2" id="nav">
+      <section class="o-page" id="nav">
         <div class="o-layout">
 
-          <div class="o-layout__item u-1/1">
-            <h1>Kitchen Sink</h1>
-          </div>
-
-          <div class="o-layout__item u-1/1">
+          <div class="o-layout__item u-1/1 u-pos-f u-bgcol-wht u-pb-1 u-pt-1 u-z9 u-mt-4-neg">
             <ul class="o-list-inline">
+              <li class="u-mr--5"><a class="u-td-none u-col-g10" href="#"><strong>Kitchen Sink</strong></a></li>
               <li class="u-mr--5"><a href="#colours">Colours</a></li>
               <li class="u-mr--5"><a href="#layout">Layout (Grid system)</a></li>
               <li class="u-mr--5"><a href="#buttons">Buttons</a></li>
@@ -36,9 +33,22 @@
               <li class="u-mr--5"><a href="#spacing">Spacing</a></li>
               <li class="u-mr--5"><a href="#hovers">Hovers</a></li>
               <li class="u-mr--5"><a href="#helpers">Helpers</a></li>
+              <li class="u-mr--5"><a href="#media-queries">Media Queries</a></li>
               <li class="u-mr--5"><a href="#itcss">ITCSS</a></li>
               <li class="u-mr--5"><a href="#resources">Resources</a></li>
             </ul>
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <section class="o-page u-mb-2 u-mt-4" id="nav">
+        <div class="o-layout">
+
+          <div class="o-layout__item u-1/1">
+            <h1>Kitchen Sink</h1>
           </div>
 
         </div>
@@ -50,7 +60,7 @@
         <div class="o-layout--flush o-layout--middle u-mb-1">
 
           <div class="o-layout__item u-1/1">
-            <h2>Colours</h2>
+            <h3>Colours</h3>
           </div>
 
           <div class="o-layout__item u-1/12 u-tc">
@@ -207,7 +217,7 @@
           <div class="o-layout o-layout--middle">
 
             <div class="o-layout__item u-1/1">
-              <h2>Layout</h2>
+              <h3>Layout</h3>
 
               <p>The layout system is a powerful, flexible, highly advanced evolution of the traditional grid system.</p>
 
@@ -221,7 +231,7 @@
         <div class="o-page">
           <div class="o-layout">
             <div class="o-layout__item u-1/1">
-              <h4>Page</h4>
+              <h5>Page</h5>
               <p>Container for .o-layout &amp; .o-layout__items</p>
             </div>
           </div>
@@ -299,7 +309,7 @@
           <div class="o-layout">
             <div class="o-layout__item u-1/1">
               <div class="">
-                <h4>Layout items &amp; widths</h4>
+                <h5>Layout items &amp; widths</h5>
                 <p>If you are coming from a framework such as Bootstrap. The ".o-page" class is our <b>container</b>. The ".o-layout" class is our <b>row</b>, the ".o-layout__item" class is our <b>column</b> and widths are our <b>column widths</b>.</p>
                 <p>Try adding @s, @m, @l to widths for responsive columns at different breakpoints. i.e, ".o-layout__item  u-1/6@l  u-1/3@m  u-1/1@s".</p>
               </div>
@@ -630,15 +640,13 @@
 
 
 
-
-
       <section class="u-mb-3">
 
         <div class="o-page">
           <div class="o-layout">
             <div class="o-layout__item u-1/1">
               <div class="">
-                <h4>Layouts</h4>
+                <h5>Layouts</h5>
               </div>
             </div>
           </div>
@@ -731,7 +739,7 @@
           </div>
         </div>
 
-        <!-- small -->
+        <!-- layout small -->
         <div class="o-page u-mb-1">
           <div class="o-layout--small">
 
@@ -760,7 +768,7 @@
           </div>
         </div>
 
-        <!-- large -->
+        <!-- layout large -->
         <div class="o-page u-mb-1">
           <div class="o-layout--large">
 
@@ -789,7 +797,7 @@
           </div>
         </div>
 
-        <!-- Huge -->
+        <!-- layout huge -->
         <div class="o-page u-mb-1">
           <div class="o-layout--huge">
 
@@ -818,7 +826,7 @@
           </div>
         </div>
 
-        <!-- rev -->
+        <!-- layout rev -->
         <div class="o-page u-mb-1">
           <div class="o-layout o-layout--rev">
 
@@ -847,7 +855,7 @@
           </div>
         </div>
 
-        <!-- center -->
+        <!-- layout center -->
         <div class="o-page u-mb-1">
           <div class="o-layout o-layout--center">
 
@@ -876,7 +884,7 @@
           </div>
         </div>
 
-        <!-- center -->
+        <!-- layout right -->
         <div class="o-page u-mb-1">
           <div class="o-layout o-layout--right">
 
@@ -905,7 +913,7 @@
           </div>
         </div>
 
-        <!-- auto -->
+        <!-- layout auto -->
         <div class="o-page u-mb-1">
           <div class="o-layout o-layout--auto">
 
@@ -952,7 +960,7 @@
           </div>
         </div>
 
-        <!-- top -->
+        <!-- layout top -->
         <div class="o-page u-mb-1">
           <div class="o-layout o-layout--top">
 
@@ -987,7 +995,7 @@
           </div>
         </div>
 
-        <!-- middle -->
+        <!-- layout middle -->
         <div class="o-page u-mb-1">
           <div class="o-layout o-layout--middle">
 
@@ -1022,7 +1030,7 @@
           </div>
         </div>
 
-        <!-- bottom -->
+        <!-- layout bottom -->
         <div class="o-page u-mb-1">
           <div class="o-layout o-layout--bottom">
 
@@ -1057,7 +1065,7 @@
           </div>
         </div>
 
-        <!-- flex equal height -->
+        <!-- layout flex equal-height -->
         <div class="o-page u-mb-1">
           <div class="o-layout o-flex-layout--equal-height">
 
@@ -1109,11 +1117,12 @@
         <div class="o-layout">
 
           <div class="o-layout__item u-1/1 u-mb-1">
-            <h2>Typography</h2>
+            <h3>Typography</h3>
           </div>
 
           <div class="o-layout__item u-1/1 u-mb-1">
-            <h4>Default headings</h4>
+            <h5>Default headings</h5>
+
             <h1>.u-h1 - 64px</h1>
             <h2>.u-h2 - 48px</h2>
             <h3>.u-h3 - 36px</h3>
@@ -1121,12 +1130,19 @@
             <h5>.u-h5 - 24px</h5>
             <h6>.u-h6 - 20px</h6>
 
-            <p class="">Unfortunately the designers couldn't decide on what font-sizes to use, so we also have font-size helpers. i.e, .u-fs-32 (font-size 32px), .u-fs-120 (font-size 120px). If possible do not use these. We should only use h1-h6 font-sizes. If there is a font-size that isn't a h1-h6 font-size value in your design, let the designer know and see if a default font-size can be used instead.</p>
+            <p>Unfortunately due to time restraints our designers couldn't decide on what font-sizes to use. So we also have font-size helpers. i.e, .u-fs-32 (font-size 32px), .u-fs-120 (font-size 120px).</p>
+
+            <p>If possible do not use these. We should only use our h1-h6 font-sizes. If there is a font-size that isn't a h1-h6 font-size in your design, let the designer know and see if a default font-size can be used instead.</p>
+
+            <!-- u-fs-
+            <p>10, 12, 18, 20, 22, 24, 30, 32, 34, 36, 48, 53, 60, 64, 70, 120</p> 
+            -->
+
             <p>Font sizes, like colour palettes, should be limited, preset and non-arbitrary. As explained in <a href="http://csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/">this blog post.</a></p>
           </div>
 
           <div class="o-layout__item u-1/1 u-mb-1">
-            <h4>Paragraphs</h4>
+            <h5>Paragraphs</h5>
 
             <p class="u-p1 u-mb-none"><b>.u-p1</b> - 18px</p>
             <p class="u-p1">Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.</p>
@@ -1145,17 +1161,20 @@
           </div>
 
           <div class="o-layout__item u-1/1 u-mb-1">
-            <h4>Font family</h4>
+            <h5>Font family</h5>
+
             <p>.u-ff-general - <span class="u-ff-general">Source Sans Pro</span></p>
-            <p>.u-ff-brand-lt - <span class="u-ff-brand-lt">Gibson-Light</span></p>
-            <p>.u-ff-brand-reg - <span class="u-ff-brand-reg">Gibson-Regular</span></p>
-            <p>.u-ff-brand-home-hl - <span class="u-ff-brand-home-hl">Zona Pro Hairline</span></p>
-            <p>.u-ff-brand-home-lt - <span class="u-ff-brand-home-lt">Zona Pro Light</span></p>
-            <p>.u-ff-brand-home-reg - <span class="u-ff-brand-home-reg">Zona Pro Regular</span></p>
+
+            <p>.u-ff-brand-lt - <span class="u-ff-brand-lt">Zona Pro Light</span></p>
+            <p>.u-ff-brand-reg - <span class="u-ff-brand-reg">Zona Pro Regular</span></p>
+            <p>.u-ff-brand-sb - <span class="u-ff-brand-sb">Zona Pro Semi Bold</span></p>
+
+            <p>.u-ff-brand-alt-lt - <span class="u-ff-brand-alt-lt">Gibson Light</span></p>
+            <p>.u-ff-brand-alt-reg - <span class="u-ff-brand-alt-reg">Gibson Regular</span></p>
           </div>
 
           <div class="o-layout__item u-1/1">
-          <h4>Typographic helpers</h4>
+          <h5>Typographic helpers</h5>
             <ul class="o-list-block---25">
               <li class="o-list-block__item"><b>.u-tr</b> - text-align: right;</li>
               <li class="o-list-block__item"><b>.u-tc</b> - text-align: center;</li>
@@ -1180,7 +1199,7 @@
         <div class="o-layout o-layout--middle">
 
           <div class="o-layout__item u-1/1">
-            <h2>Buttons</h2>
+            <h3>Buttons</h3>
           </div>
 
           <div class="o-layout__item u-1/1 u-mb-1">
@@ -1211,6 +1230,11 @@
           <div class="o-layout__item u-1/1 u-mb-1">
             <p class="u-pb--25 u-mb-none">.c-btn--5</p>
             <button class="o-btn c-btn--5">Button 5</button>
+          </div>
+
+          <div class="o-layout__item u-1/1 u-mb-1">
+            <p class="u-pb--25 u-mb-none">.c-btn--6</p>
+            <button class="o-btn c-btn--6">Button 6</button>
           </div>
 
           <div class="o-layout__item u-1/1 u-mb-1">
@@ -1248,12 +1272,12 @@
           <div class="o-layout">
 
             <div class="o-layout__item u-1/1">
-              <h2>Spacing</h2>
+              <h3>Spacing</h3>
               <p>A collection of helper classes for spacings like margin and padding. Knowing these conventions means you can compose a huge array of spacing helpers.</p>
             </div>
 
             <div class="o-layout__item u-4/12">
-              <h4>Paddings</h4>
+              <h5>Paddings</h5>
               <ul class="o-list-block---25">
                 <li class="o-list-block__item"><b>.u-p</b> - padding around the whole object</li>
                 <li class="o-list-block__item"><b>.u-pt</b> - padding-top on the object</li>
@@ -1267,7 +1291,7 @@
             </div><!--
 
          --><div class="o-layout__item u-4/12">
-              <h4>Margins</h4>
+              <h5>Margins</h5>
               <ul class="o-list-block---25">
                 <li class="o-list-block__item"><b>.u-m</b> - margin around the whole object</li>
                 <li class="o-list-block__item"><b>.u-mt</b> - margin-top on the object</li>
@@ -1282,7 +1306,7 @@
             </div><!--
 
          --><div class="o-layout__item u-4/12">
-              <h4>Sizes</h4>
+              <h5>Sizes</h5>
               <ul class="o-list-block---25">
                 <li class="o-list-block__item">Add sizes to end of margin and padding values. i.e <b>.u-mt--25</b></li>
                 <li class="o-list-block__item"><b>-none</b> - 0px</li>
@@ -1290,7 +1314,9 @@
                 <li class="o-list-block__item"><b>--25</b> - 7.5px</li>
                 <li class="o-list-block__item"><b>--5</b> - 15px</li>
                 <li class="o-list-block__item"><b>-1</b> - 30px</li>
+                <li class="o-list-block__item"><b>-1-5</b> - 45px</li>
                 <li class="o-list-block__item"><b>-2</b> - 60px</li>
+                <li class="o-list-block__item"><b>-2-5</b> - 75px</li>
                 <li class="o-list-block__item"><b>-3</b> - 90px</li>
                 <li class="o-list-block__item"><b>-4</b> - 120px</li>
               </ul>
@@ -1324,7 +1350,9 @@
                 <li><p class="u-pt--25 u-mb-none u-bgcol-g4">.u-pt--25</p></li>
                 <li><p class="u-pt--5 u-mb-none u-bgcol-g4">.u-pt--5</p></li>
                 <li><p class="u-pt-1 u-mb-none u-bgcol-g4">.u-pt-1</p></li>
+                <li><p class="u-pt-1-5 u-mb-none u-bgcol-g4">.u-pt-1-5</p></li>
                 <li><p class="u-pt-2 u-mb-none u-bgcol-g4">.u-pt-2</p></li>
+                <li><p class="u-pt-2-5 u-mb-none u-bgcol-g4">.u-pt-2-5</p></li>
                 <li><p class="u-pt-3 u-mb-none u-bgcol-g4">.u-pt-3</p></li>
                 <li><p class="u-pt-4 u-mb-none u-bgcol-g4">.u-pt-4</p></li>
               </ul>
@@ -1352,7 +1380,9 @@
                 <li><p class="u-pb--25 u-mb-none u-bgcol-g4">.u-pb--25</p></li>
                 <li><p class="u-pb--5 u-mb-none u-bgcol-g4">.u-pb--5</p></li>
                 <li><p class="u-pb-1 u-mb-none u-bgcol-g4">.u-pb-1</p></li>
+                <li><p class="u-pb-1-5 u-mb-none u-bgcol-g4">.u-pb-1-5</p></li>
                 <li><p class="u-pb-2 u-mb-none u-bgcol-g4">.u-pb-2</p></li>
+                <li><p class="u-pb-2-5 u-mb-none u-bgcol-g4">.u-pb-2-5</p></li>
                 <li><p class="u-pb-3 u-mb-none u-bgcol-g4">.u-pb-3</p></li>
                 <li><p class="u-pb-4 u-mb-none u-bgcol-g4">.u-pb-4</p></li>
               </ul>
@@ -1380,7 +1410,9 @@
                 <li><p class="u-pv--25 u-mb-none u-bgcol-g4">.u-pv--25</p></li>
                 <li><p class="u-pv--5 u-mb-none u-bgcol-g4">.u-pv--5</p></li>
                 <li><p class="u-pv-1 u-mb-none u-bgcol-g4">.u-pv-1</p></li>
+                <li><p class="u-pv-1-5 u-mb-none u-bgcol-g4">.u-pv-1-5</p></li>
                 <li><p class="u-pv-2 u-mb-none u-bgcol-g4">.u-pv-2</p></li>
+                <li><p class="u-pv-2-5 u-mb-none u-bgcol-g4">.u-pv-2-5</p></li>
                 <li><p class="u-pv-3 u-mb-none u-bgcol-g4">.u-pv-3</p></li>
                 <li><p class="u-pv-4 u-mb-none u-bgcol-g4">.u-pv-4</p></li>
               </ul>
@@ -1411,7 +1443,7 @@
         <div class="o-layout">
 
           <div class="o-layout__item u-1/1">
-            <h2>Helpers</h2>
+            <h3>Helpers</h3>
             <p>The Inuit CSS framework comes with a huge array of helpers to help us build a component. We would like to try and avoid using custom CSS as much as possible. Treat your CSS like lego bricks. Build it by adding classes with the CSS helpers that you have available. If something is too complex to build with helpers then custom CSS is acceptable.</p>
             <p>A lot of our helper classes also work at different brekpoints. Try adding @s, @m, @l for responsive helpers. i.e ".u-fl@s"</p>
           </div>
@@ -1448,12 +1480,75 @@
               <li class="o-list-block__item"><b>.u-hov-td-u:hover</b> - text-decoration: underline;</li>
               <li class="o-list-block__item"><b>.u-hov-nav-wht:hover</b> - border-bottom: 2px solid #fff;</li>
               <li class="o-list-block__item"><b>.u-hov-bb-g8:hover</b> - border-bottom: 3px solid #5c5c5c;</li>
-              <li class="o-list-block__item"><b>.u-hov-zoom</b> - overflow: hidden; position: relative;</li>
-              <li class="o-list-block__item"><b>.u-hov-zoom img</b> - transition: all 0.6s cubic-bezier(0.66, 0.04, 0.23, 0.99);</li>
-              <li class="o-list-block__item"><b>.u-hov-zoom img:hover</b> - transform: scale3d(1.1, 1.1, 1); transform-style: preserve-3d;</li>
+              <li class="o-list-block__item"><b>.u-hov-zoom</b> - overflow: hidden; position: relative; (&amp;img) transition: all 0.6s cubic-bezier(0.66, 0.04, 0.23, 0.99); (&amp;img:hover) transform: scale3d(1.1, 1.1, 1); transform-style: preserve-3d;</li>
 
+              <li class="o-list-block__item"><b>.u-z1</b> (1-10) - z-index: 1;</li>
             </ul>
           </div>
+
+        </div>
+      </section>
+
+
+
+      <section class="o-page u-mb-3" id="media-queries">
+        <div class="o-layout">
+
+          <div class="o-layout__item u-1/1">
+            <h3>Media Queries</h3>
+          </div>
+
+          <div class="o-layout__item u-1/1">
+            <ul class="o-list-block---25">
+              <li class="o-list-block__item">@include media-query(s) { }</li>
+              <li class="o-list-block__item">@include media-query(sol) { }</li>
+              <li class="o-list-block__item">@include media-query(m) { }</li>
+              <li class="o-list-block__item">@include media-query(mo) { }</li>
+              <li class="o-list-block__item">@include media-query(l) { }</li>
+              <li class="o-list-block__item">@include media-query(xl) { }</li>
+            </ul>
+          </div>
+
+          <div class="o-layout__item u-1/1 u-mt--5">
+            <button @click="show = !show">{{ show ? 'Hide CSS' : 'Show CSS' }}</button>
+          </div>
+
+            <div class="o-layout__item u-1/1" v-show="show">
+  <pre><code class="language-css">
+  /* s */
+  /* Mobile portrait */
+  @media screen 
+  and (max-width: 767px) { /* STYLES GO HERE */ }
+
+  /* sol */
+  /* Mobile Landscape */
+  @media screen 
+  and (max-width: 767px) 
+  and (orientation: landscape) { /* STYLES GO HERE */ }
+
+  /* m */
+  /* Tablet */
+  @media screen 
+  and (min-width: 768px) { /* STYLES GO HERE */ }
+
+  /* mo */
+  /* Tablet potrait */
+  @media screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (orientation: portrait), screen 
+  and (min-width: 768px) 
+  and (max-width: 1023px) { /* STYLES GO HERE */ }
+
+  /* l */
+  @media screen 
+  and (min-width: 1024px) { /* STYLES GO HERE */ }
+
+  /* xl */
+  @media screen 
+  and (min-width: 1280px) { /* STYLES GO HERE */ }
+  </code></pre>
+            </div>
 
         </div>
       </section>
@@ -1464,12 +1559,13 @@
         <div class="o-layout">
 
           <div class="o-layout__item u-1/1">
-            <h2>Hovers</h2>
+            <h3>Hovers</h3>
             <p>A collection of hover utilities.</p>
           </div>
 
           <div class="o-layout__item u-1/3">
             <p class="u-pb--25 u-mb-none">.u-hov-zoom</p>
+
             <div class="u-hov-zoom">
               <img src="http://www.fillmurray.com/700/400">
             </div>
@@ -1484,7 +1580,7 @@
         <div class="o-layout">
 
           <div class="o-layout__item u-5/12 u-mb-1">
-            <h2>ITCSS</h2>
+            <h3>ITCSS</h3>
             <img src="img/itcss-triangle.jpg">
           </div>
 
@@ -1527,7 +1623,7 @@
         <div class="o-layout">
 
           <div class="o-layout__item u-1/1">
-            <h2>Resources</h2>
+            <h3>Resources</h3>
           </div>
 
           <div class="o-layout__item u-1/1">
