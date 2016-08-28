@@ -1168,8 +1168,13 @@
 
 @font-face {
   font-family: 'icomoon';
+<<<<<<< HEAD
   src: url("../fonts/icomoon/icomoon.eot?enzi4z");
   src: url("../fonts/icomoon/icomoon.eot?enzi4z#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?enzi4z") format("truetype"), url("../fonts/icomoon/icomoon.woff?enzi4z") format("woff"), url("../fonts/icomoon/icomoon.svg?enzi4z#icomoon") format("svg");
+=======
+  src: url("/resources/media/fonts/icomoon/icomoon.eot?enzi4z");
+  src: url("/resources/media/fonts/icomoon/icomoon.eot?enzi4z#iefix") format("embedded-opentype"), url("/resources/media/fonts/icomoon/icomoon.ttf?enzi4z") format("truetype"), url("/resources/media/fonts/icomoon/icomoon.woff?enzi4z") format("woff"), url("/resources/media/fonts/icomoon/icomoon.svg?enzi4z#icomoon") format("svg");
+>>>>>>> 8efa8b28b70fd495894d82906bead6a945f9895b
   font-weight: normal;
   font-style: normal; }
 
@@ -1292,8 +1297,13 @@
 
 @font-face {
   font-family: 'Zona Pro Hairline';
+<<<<<<< HEAD
   src: url("../fonts/zona-pro/ZonaPro-Hairline.eot");
   src: url("../fonts/zona-pro/ZonaPro-Hairline.eot?#iefix") format("embedded-opentype"), url("../fonts/zona-pro/ZonaPro-Hairline.woff") format("woff"), url("../fonts/zona-pro/ZonaPro-Hairline.ttf") format("truetype"), url("../fonts/zona-pro/ZonaPro-Hairline.svg#c5e1f6902d776e7e1ed6262bd857df8d") format("svg");
+=======
+  src: url("/resources/media/fonts/zona-pro/ZonaPro-Hairline.eot");
+  src: url("/resources/media/fonts/zona-pro/ZonaPro-Hairline.eot?#iefix") format("embedded-opentype"), url("/resources/media/fonts/zona-pro/ZonaPro-Hairline.woff") format("woff"), url("/resources/media/fonts/zona-pro/ZonaPro-Hairline.ttf") format("truetype"), url("/resources/media/fonts/zona-pro/ZonaPro-Hairline.svg#c5e1f6902d776e7e1ed6262bd857df8d") format("svg");
+>>>>>>> 8efa8b28b70fd495894d82906bead6a945f9895b
   font-style: normal;
   font-weight: 100; }
 
@@ -1313,15 +1323,25 @@
 
 @font-face {
   font-family: 'Zona Pro SemiBold';
+<<<<<<< HEAD
   src: url("../fonts/zona-pro/ZonaPro-SemiBold.eot");
   src: url("../fonts/zona-pro/ZonaPro-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/zona-pro/ZonaPro-SemiBold.woff") format("woff"), url("../fonts/zona-pro/ZonaPro-SemiBold.ttf") format("truetype"), url("../fonts/zona-pro/ZonaPro-SemiBold.svg#162f7822120324b8c470efd092b0a3f1") format("svg");
+=======
+  src: url("/resources/media/fonts/zona-pro/ZonaPro-SemiBold.eot");
+  src: url("/resources/media/fonts/zona-pro/ZonaPro-SemiBold.eot?#iefix") format("embedded-opentype"), url("/resources/media/fonts/zona-pro/ZonaPro-SemiBold.woff") format("woff"), url("/resources/media/fonts/zona-pro/ZonaPro-SemiBold.ttf") format("truetype"), url("/resources/media/fonts/zona-pro/ZonaPro-SemiBold.svg#162f7822120324b8c470efd092b0a3f1") format("svg");
+>>>>>>> 8efa8b28b70fd495894d82906bead6a945f9895b
   font-style: normal;
   font-weight: 700; }
 
 @font-face {
   font-family: 'icomoon';
+<<<<<<< HEAD
   src: url("../fonts/icomoon/icomoon.eot?enzi4z");
   src: url("../fonts/icomoon/icomoon.eot?enzi4z#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?enzi4z") format("truetype"), url("../fonts/icomoon/icomoon.woff?enzi4z") format("woff"), url("../fonts/icomoon/icomoon.svg?enzi4z#icomoon") format("svg");
+=======
+  src: url("/resources/media/fonts/icomoon/icomoon.eot?enzi4z");
+  src: url("/resources/media/fonts/icomoon/icomoon.eot?enzi4z#iefix") format("embedded-opentype"), url("/resources/media/fonts/icomoon/icomoon.ttf?enzi4z") format("truetype"), url("/resources/media/fonts/icomoon/icomoon.woff?enzi4z") format("woff"), url("/resources/media/fonts/icomoon/icomoon.svg?enzi4z#icomoon") format("svg");
+>>>>>>> 8efa8b28b70fd495894d82906bead6a945f9895b
   font-weight: normal;
   font-style: normal; }
 
@@ -2389,7 +2409,11 @@ body {
       -webkit-appearance: none;
          -moz-appearance: none;
               appearance: none;
+<<<<<<< HEAD
       background-image: url("/images/common/arrow-down.png");
+=======
+      background-image: url("/resources/media/images/common/arrow-down.png");
+>>>>>>> 8efa8b28b70fd495894d82906bead6a945f9895b
       background-position: right 12px center;
       background-repeat: no-repeat;
       background-size: 12px;
@@ -3463,7 +3487,11 @@ body {
       display: inline-block;
       padding: 0 120px; } }
   .hld .o-loader.loading {
+<<<<<<< HEAD
     background: url("/images/common/Retail_Preloader_105x105.gif") center no-repeat;
+=======
+    background: url("/resources/media/images/common/Retail_Preloader_105x105.gif") center no-repeat;
+>>>>>>> 8efa8b28b70fd495894d82906bead6a945f9895b
     min-height: 200px; }
   .hld .o-loader.ready {
     background: none;
