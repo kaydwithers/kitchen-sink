@@ -1,13 +1,23 @@
-
-// toggle button
-var app = new Vue({
-  el: 'body',
-  data: {
-    show: false,
+// Toggle
+Vue.component('v-toggle', {
+  template: '#v-toggle',
+  props: ['name'],
+  data: function() { 
+    return { 
+      toggleActive: false
+    }
   },
   methods: {
-    toggleShow: function() {
-      this.show = !this.show;
+    toggle: function() {
+      this.toggleActive = !this.toggleActive;
     }
   }
+});
+
+var app = new Vue({
+  el: '#v-app',
+  data: {
+    toggleActive: false,
+  },
+  methods: {}
 });

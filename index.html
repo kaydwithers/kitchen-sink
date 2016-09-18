@@ -5,20 +5,22 @@
   <meta charset="utf-8">
   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
-  <title>
-    Kitchen sink
-  </title>
+
+  <title>Kitchen sink</title>
 
   <link href="css/build.css" rel="stylesheet" />
   <link href="css/main.css" rel="stylesheet" />
   <link href="css/prism.css" rel="stylesheet" />
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
-
 </head>
 <body>
-  <div class="stage">
+  <div class="stage" id="v-app">
 
     <div class="hld">
+
+
+
+
 
       <section class="o-page" id="nav">
         <div class="o-layout">
@@ -32,6 +34,7 @@
               <li class="u-mr--5"><a href="#typography">Typography</a></li>
               <li class="u-mr--5"><a href="#spacing">Spacing</a></li>
               <li class="u-mr--5"><a href="#hovers">Hovers</a></li>
+              <li class="u-mr--5"><a href="#handlebars">Handlebars</a></li>
               <li class="u-mr--5"><a href="#helpers">Helpers</a></li>
               <li class="u-mr--5"><a href="#media-queries">Media Queries</a></li>
               <li class="u-mr--5"><a href="#itcss">ITCSS</a></li>
@@ -44,6 +47,8 @@
 
 
 
+
+
       <section class="o-page u-mb-2 u-mt-4" id="nav">
         <div class="o-layout">
 
@@ -53,6 +58,8 @@
 
         </div>
       </section>
+
+
 
 
 
@@ -237,8 +244,8 @@
           </div>
         </div>
 
-        <div class="u-mb-1 v-toggle">
-          <div class="o-layout o-layout--middle" v-if="toggleShow">
+        <div class="u-mb-1">
+          <div class="o-layout o-layout--middle">
 
             <div class="o-layout__item u-1/1">
               <p class="u-pb--25 u-mb-none">.o-layout</p>
@@ -250,11 +257,8 @@
               </div>
             </div>
 
-            <div class="o-layout__item u-1/1 u-mt--5">
-              <button @click="toggleShow">{{ show ? 'Hide HTML' : 'Show HTML' }}</button>
-            </div>
-
-            <div class="o-layout__item u-1/1" v-show="show">
+            <div class="o-layout__item u-1/1">
+              <v-toggle>
 
   <pre><code class="language-html">
     &#60;div class="o-layout"&#62;
@@ -264,6 +268,7 @@
     &#60;/div&#62;
   </code></pre>
 
+              </v-toggle>
             </div>
 
           </div>
@@ -285,14 +290,11 @@
           </div>
         </div>
 
-        <div class="o-page o-page--full u-mb-1 v-toggle">
-          <div class="o-layout o-layout--middle" v-if="toggleShow">
+        <div class="o-page o-page--full u-mb-1">
+          <div class="o-layout o-layout--middle">
 
-            <div class="o-layout__item u-1/1 u-mt--5">
-              <button @click="toggleShow">{{ show ? 'Hide HTML' : 'Show HTML' }}</button>
-            </div>
-
-            <div class="o-layout__item u-1/1" v-show="show">
+            <div class="o-layout__item u-1/1">
+              <v-toggle>
 
   <pre><code class="language-html">
     &#60;div class="o-page  o-page--full"&#62;
@@ -300,13 +302,14 @@
     &#60;/div&#62;
   </code></pre>
 
+              </v-toggle>
             </div>
 
           </div>
         </div>
 
-        <div class="o-page u-mb-1 v-toggle">
-          <div class="o-layout o-layout--middle" v-if="toggleShow">
+        <div class="o-page u-mb-1">
+          <div class="o-layout o-layout--middle">
 
             <div class="o-layout__item u-1/1">
               <p class="u-pb--25 u-mb-none">.o-page</p>
@@ -318,11 +321,8 @@
               </div>
             </div>
 
-            <div class="o-layout__item u-1/1 u-mt--5">
-              <button @click="toggleShow">{{ show ? 'Hide HTML' : 'Show HTML' }}</button>
-            </div>
-
-            <div class="o-layout__item u-1/1" v-show="show">
+            <div class="o-layout__item u-1/1">
+              <v-toggle>
 
   <pre><code class="language-html">
     &#60;div class="o-page"&#62;
@@ -330,6 +330,7 @@
     &#60;/div&#62;
   </code></pre>
 
+              </v-toggle>
             </div>
 
           </div>
@@ -361,11 +362,8 @@
               </div>
             </div>
 
-            <div class="o-layout__item u-1/1 u-mt--5">
-              <button @click="show = !show">{{ show ? 'Hide HTML' : 'Show HTML' }}</button>
-            </div>
-
-            <div class="o-layout__item u-1/1" v-show="show">
+            <div class="o-layout__item u-1/1">
+              <v-toggle>
 
   <pre><code class="language-html">
     &#60;div class="o-page"&#62;
@@ -378,6 +376,7 @@
       &#60;/div&#62;
     &#60;/div&#62;
   </code></pre>
+              </v-toggle>
 
             </div>
 
@@ -404,21 +403,18 @@
               </div>
             </div>
 
-            <div class="o-layout__item u-1/1 u-mt--5">
-              <button @click="show = !show">{{ show ? 'Hide HTML' : 'Show HTML' }}</button>
-            </div>
-
-            <div class="o-layout__item u-1/1" v-show="show">
+            <div class="o-layout__item u-1/1">
+              <v-toggle>
 
   <pre><code class="language-html">
     &#60;div class="o-page"&#62;
       &#60;div class="o-layout"&#62;
 
-        &#60;div class="o-layout__item  u-6/12"&#62;
+        &#60;div class="o-layout__item  u-1/2"&#62;
           // Content inside here
         &#60;/div&#62;&#60;!--
 
-     --&#62;&#60;div class="o-layout__item  u-6/12"&#62;
+     --&#62;&#60;div class="o-layout__item  u-1/12"&#62;
           // Content inside here
         &#60;/div&#62;
 
@@ -426,6 +422,7 @@
     &#60;/div&#62;
   </code></pre>
 
+              </v-toggle>
             </div>
 
           </div>
@@ -692,11 +689,8 @@
               </div>
             </div>
 
-            <div class="o-layout__item u-1/1 u-mt--5">
-              <button @click="show = !show">{{ show ? 'Hide HTML' : 'Show HTML' }}</button>
-            </div>
-
-            <div class="o-layout__item u-1/1" v-show="show">
+            <div class="o-layout__item u-1/1">
+              <v-toggle>
 
   <pre><code class="language-html">
     &#60;div class="o-page"&#62;
@@ -718,12 +712,89 @@
     &#60;/div&#62;
   </code></pre>
 
+              </v-toggle>
             </div>
 
           </div>
         </div>
 
+        <!-- Nested layout -->
+        <div class="o-page u-mb-1">
+
+          <div class="o-layout">
+            <div class="o-layout__item u-1/1">
+              <p class="u-pb--25 u-mb-none">Nested layout</p>
+            </div>
+          </div>
+
+          <div class="o-layout">
+            <div class="o-layout__item u-1/1 u-tc">
+
+              <div class="u-bgcol-g4 u-pt--25 u-pb--5">
+                <p class="u-mb--25">.u-1/1</p>
+
+                <!-- begin nest -->
+                <div class="o-page">
+                  <div class="o-layout">
+
+                    <div class="o-layout__item u-1/2">
+                      <div class="u-bgcol-g2 u-pv--25">
+                        <p class="u-mb-none">.u-1/2</p>
+                      </div>
+                    </div><!--
+
+                 --><div class="o-layout__item u-1/2">
+                      <div class="u-bgcol-g2 u-pv--25">
+                        <p class="u-mb-none">.u-1/2</p>
+                      </div>
+                    </div>
+
+                  </div><!--/.o-layout -->
+                </div><!--/.o-page -->
+
+              </div><!--/.bg-col-g4 -->
+
+            </div><!--/.o-layout__item -->
+
+            <div class="o-layout__item u-1/1">
+              <v-toggle>
+
+  <pre><code class="language-html"><script type="prism-html-markup">
+  <div class="o-page">
+    <div class="o-layout">
+
+      <div class="o-layout__item u-1/1">
+        // Content inside here
+
+        <div class="o-page">
+          <div class="o-layout">
+
+            <div class="o-layout__item u-1/2">
+              // Content inside here
+            </div><!--
+
+         --><div class="o-layout__item u-1/2">
+              // Content inside here
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </script></code></pre>
+
+              </v-toggle>
+            </div>
+
+          </div><!--/.o-layout -->
+
+        </div><!--/o-page -->
+
       </section>
+
+
 
 
 
@@ -1199,8 +1270,9 @@
 
 
 
-      <section class="o-page u-mb-3" id="typography">
 
+
+      <section class="o-page u-mb-3" id="typography">
         <div class="o-layout">
 
           <div class="o-layout__item u-1/1 u-mb-1">
@@ -1210,12 +1282,12 @@
           <div class="o-layout__item u-1/1 u-mb-1">
             <h5>Default headings - @l, @m, @s</h5>
 
-            <h1>.u-h1 - 64px, 48px, 30px</h1>
-            <h2>.u-h2 - 48px, 36px, 24px</h2>
-            <h3>.u-h3 - 36px, 30px, 20px</h3>
-            <h4>.u-h4 - 30px, 24px, 28px</h4>
-            <h5>.u-h5 - 24px, 20px, 16px</h5>
-            <h6>.u-h6 - 20px, 16px, 14px</h6>
+            <h1>.u-h1<span class="u-p1 u-fw-1"> - 64px, 48px, 30px</span></h1>
+            <h2>.u-h2<span class="u-p1 u-fw-1"> - 48px, 36px, 24px</span></h2>
+            <h3>.u-h3<span class="u-p1 u-fw-1"> - 36px, 30px, 20px</span></h3>
+            <h4>.u-h4<span class="u-p1 u-fw-1"> - 30px, 24px, 28px</span></h4>
+            <h5>.u-h5<span class="u-p1 u-fw-1"> - 24px, 20px, 16px</span></h5>
+            <h6>.u-h6<span class="u-p1 u-fw-1"> - 20px, 16px, 14px</span></h6>
 
             <p>Due to time restraints our designers couldn't decide on what font-sizes to use. So we also have font-size helpers. i.e, .u-fs-32 (font-size 32px), .u-fs-120 (font-size 120px).</p>
 
@@ -1247,21 +1319,22 @@
             <p class="u-p5">The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
           </div>
 
-          <div class="o-layout__item u-1/1 u-mb-1">
+          <div class="o-layout__item u-1/1 u-mb-2">
             <h5>Font family</h5>
 
-            <p>.u-ff-general - <span class="u-ff-general">Source Sans Pro</span></p>
-
-            <p>.u-ff-brand-lt - <span class="u-ff-brand-lt">Zona Pro Light</span></p>
-            <p>.u-ff-brand-reg - <span class="u-ff-brand-reg">Zona Pro Regular</span></p>
-            <p>.u-ff-brand-sb - <span class="u-ff-brand-sb">Zona Pro Semi Bold</span></p>
-
-            <p>.u-ff-brand-alt-lt - <span class="u-ff-brand-alt-lt">Gibson Light</span></p>
-            <p>.u-ff-brand-alt-reg - <span class="u-ff-brand-alt-reg">Gibson Regular</span></p>
+            <ul class="o-list-block---25">
+              <li class="o-list-block__item"><b>.u-ff-general</b> - <span class="u-ff-general">Source Sans Pro</span></li>
+              <li class="o-list-block__item"><b>.u-ff-brand-lt</b> - <span class="u-ff-brand-lt">Zona Pro Light</span></li>
+              <li class="o-list-block__item"><b>.u-ff-brand-reg</b> - <span class="u-ff-brand-reg">Zona Pro Regular</span></li>
+              <li class="o-list-block__item"><b>.u-ff-brand-sb</b> - <span class="u-ff-brand-sb">Zona Pro Semi Bold</span></li>
+              <li class="o-list-block__item"><b>.u-ff-brand-alt-lt</b> - <span class="u-ff-brand-alt-lt">Gibson Light</span></li>
+              <li class="o-list-block__item"><b>.u-ff-brand-alt-reg</b> - <span class="u-ff-brand-alt-reg">Gibson Regular</span></li>
+            </ul>
           </div>
 
           <div class="o-layout__item u-1/1">
-          <h5>Typographic helpers</h5>
+            <h5>Typographic helpers</h5>
+
             <ul class="o-list-block---25">
               <li class="o-list-block__item"><b>.u-tr</b> - text-align: right;</li>
               <li class="o-list-block__item"><b>.u-tc</b> - text-align: center;</li>
@@ -1278,8 +1351,9 @@
           </div>
 
         </div>
-
       </section>
+
+
 
 
 
@@ -1352,6 +1426,8 @@
 
         </div>
       </section>
+
+
 
 
 
@@ -1527,6 +1603,8 @@
 
 
 
+
+
       <section class="o-page u-mb-3" id="helpers">
         <div class="o-layout">
 
@@ -1564,11 +1642,12 @@
               <li class="o-list-block__item"><b>.u-td-u</b> - text-decoration: underline;</li>
               <li class="o-list-block__item"><b>.u-curs-p</b> - cursor: pointer;</li>
 
-              <li class="o-list-block__item"><b>.u-hov-curs-p:hover</b> - cursor: pointer;</li>
-              <li class="o-list-block__item"><b>.u-hov-td-u:hover</b> - text-decoration: underline;</li>
-              <li class="o-list-block__item"><b>.u-hov-nav-wht:hover</b> - border-bottom: 2px solid #fff;</li>
-              <li class="o-list-block__item"><b>.u-hov-bb-g8:hover</b> - border-bottom: 3px solid #5c5c5c;</li>
-              <li class="o-list-block__item"><b>.u-hov-zoom</b> - overflow: hidden; position: relative; (&amp;img) transition: all 0.6s cubic-bezier(0.66, 0.04, 0.23, 0.99); (&amp;img:hover) transform: scale3d(1.1, 1.1, 1); transform-style: preserve-3d;</li>
+              <li class="o-list-block__item"><b>.u-hov-curs-p</b> - :hover cursor: pointer;</li>
+              <li class="o-list-block__item"><b>.u-hov-td-u</b> - :hover text-decoration: underline;</li>
+              <li class="o-list-block__item"><b>.u-hov-col-g5</b> - :hover color: get-c(g5);</li>
+              <li class="o-list-block__item"><b>.u-hov-nav-wht</b> - :hover border-bottom: 2px solid #fff;</li>
+              <li class="o-list-block__item"><b>.u-hov-bb-g8</b> - :hover border-bottom: 3px solid get-c(g8);</li>
+              <li class="o-list-block__item"><b>.u-hov-zoom</b> - :hover zoom on hover</li>
 
               <li class="o-list-block__item"><b>.u-z1</b> (1-10) - z-index: 1;</li>
             </ul>
@@ -1597,11 +1676,9 @@
             </ul>
           </div>
 
-          <div class="o-layout__item u-1/1 u-mt--5">
-            <button @click="show = !show">{{ show ? 'Hide CSS' : 'Show CSS' }}</button>
-          </div>
+          <div class="o-layout__item u-1/1">
+            <v-toggle>
 
-            <div class="o-layout__item u-1/1" v-show="show">
   <pre><code class="language-css">
   /* s */
   /* Mobile portrait */
@@ -1636,10 +1713,14 @@
   @media screen 
   and (min-width: 1280px) { /* STYLES GO HERE */ }
   </code></pre>
+
+              </v-toggle>
             </div>
 
         </div>
       </section>
+
+
 
 
 
@@ -1661,6 +1742,58 @@
 
         </div>
       </section>
+
+
+
+
+
+      <section class="o-page u-mb-3" id="handlebars">
+        <div class="o-layout">
+
+          <div class="o-layout__item u-1/1">
+            <h3>Handlebars</h3>
+            <p>Handlebars are so cool! We use a Java compatible version of Handlebars, so use documentation from an older version of Handlebars.</p>
+          </div>
+
+          <div class="o-layout__item u-1/1 u-mb-1">
+            <v-toggle>
+  <p class="u-mb--25 u-mt-1">JSON</p>
+  <pre><code class="language-json">
+{
+  firstName: false,
+  firstNameText: "Yoda",
+  phone: false,
+  phoneText: "N/A",
+  email: true,
+  emailText: "yoda@dagobah.com"
+}
+  </code></pre>
+
+  <p class="u-mb--25 u-mt-1">Handlebar HTML</p>
+  <pre><code class="language-handlebars"><script type="prism-handlebar-markup">
+{{~#if firstName~}}
+  <p>{{firstNameText}}</p>
+
+  {{~else~}}
+    {{#if email~}}
+      <p>{{emailText}}</p>
+
+  {{~else~}}
+    {{#if phone~}}
+      <p>{{phoneText}}</p>
+
+    {{~/if~}}
+  {{~/if~}}
+{{~/if~}}
+      </script></code></pre>
+
+            </v-toggle>
+          </div>
+
+        </div>
+      </section>
+
+
 
 
 
@@ -1704,6 +1837,8 @@
 
         </div>
       </section>
+
+
 
 
 
@@ -1777,9 +1912,28 @@
         </div>
       </section>
 
+
+
+
+
     </div>
 
   </div>
+
+
+
+  <!-- toggle template -->
+  <template id="v-toggle">
+    <button class="u-mt--5" v-on:click.prevent="toggle()">
+      {{ toggleActive ? 'Hide HTML' : 'Show HTML' }}
+    </button>
+
+    <div v-show="toggleActive">
+      <slot></slot>
+    </div>
+  </template>
+
+
 
   <script src="js/vue.min.js"></script>
   <script src="js/prism.js"></script>
