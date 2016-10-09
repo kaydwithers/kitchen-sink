@@ -1,5 +1,5 @@
 > It doesn’t matter how well-considered your source order is; how well you’re utilising the cascade; what naming conventions you use; specificity can undo everything.
-> - [Harry Roberts](https://github.com/csswizardry)
+> \- [Harry Roberts](https://github.com/csswizardry)
 
 ## InuitCSS/ITCSS kitchen sink
 
