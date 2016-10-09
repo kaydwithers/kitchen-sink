@@ -6,3 +6,5 @@
 Greetings, this is a Kitchen Sink for a [InuitCSS](https://github.com/inuitcss/inuitcss) project.
 
 This kitchen sink covers a custom built version of InuitCSS. Many of the helper classes and media queries are not part of InuitCSS.
+
+[https://kaydwithers.github.io/kitchen-sink/](https://kaydwithers.github.io/kitchen-sink/)
