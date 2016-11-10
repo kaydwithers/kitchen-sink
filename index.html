@@ -18,10 +18,49 @@
     <div class="hld">
 
 
+<div class="bg">
+  <video 
+    id="myvideo"
+    class="" 
+    poster="" 
+    controls
+    preload="metadata" 
+    loop="loop" 
+    autoplay="autoplay" 
+    muted="muted"
+    auto-tag="video"
+  >
+    <source src="https://holden.com.au/resources/videos/Holden0616AccessoriesOverview_Loop_V01.webm" type='video/webm; codecs="vp8, vorbis"'>
+    <source src="https://holden.com.au/resources/videos/Holden0616AccessoriesOverview_Loop_V01.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+  </video>
+</div>
+
+<style type="text/css">
+  
+  .bg {
+    background: #333;
+    padding: 50px 0;
+  }
+
+  #myvideo,
+  #myvideo:-webkit-full-screen {
+    width: 100%;
+    height: 100%;
+  }
+    
+</style>
+
+<script type="text/javascript">
+
+var elem = document.getElementById("myvideo");
+if (elem.requestFullscreen) {
+  elem.requestFullscreen();
+}
+
+</script>
 
 
-
-      <section class="o-page" id="nav">
+<!--       <section class="o-page" id="nav">
         <div class="o-layout">
 
           <div class="o-layout__item  u-1/1  u-pos-f  u-bgcol-wht  u-pb-1  u-pt-1  u-z9  u-mt-4-neg">
@@ -42,7 +81,7 @@
           </div>
 
         </div>
-      </section>
+      </section> -->
 
 
 
