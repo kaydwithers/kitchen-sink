@@ -7,230 +7,44 @@
 
   <title>Kitchen sink</title>
 
+  <script type="text/javascript">
+    function videoControl() {
+      var myVideoContainer = document.getElementById('videoContainer');
+      myVideoContainer.webkitRequestFullscreen();
+    }
+   </script>
+
 </head>
 <body>
+
+
   <div class="stage" id="v-app">
-
     <div class="hld">
-
-      <section class="o-page  u-mb-2  u-mt-4">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <style type="text/css">
-          
-          .bg {
-            background: #333;
-            padding: 50px 0;
-          }
-
-          #myvideo,
-          #myvideo:-webkit-full-screen {
-            width: 100%;
-            height: 100%;
-          }
-            
-        </style>
+      <div class="o-page  u-mb-2  u-mt-4">
 
         <div class="o-layout">
           <div class="o-layout__item  u-1/1">
 
-            <div class="bg">
-              <video 
-                id="myvideo"
-                class="" 
-                poster="" 
-                controls
-                preload="metadata" 
-                loop="loop" 
-                autoplay="autoplay" 
-                muted="muted"
-                auto-tag="video"
-                playsinline 
-              >
-                <source src="https://holden.com.au/resources/videos/Holden0616AccessoriesOverview_Loop_V01.webm" type='video/webm; codecs="vp8, vorbis"'>
-                <source src="https://holden.com.au/resources/videos/Holden0616AccessoriesOverview_Loop_V01.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
-              </video>
-            </div>
+
+
+
+
+ <div id="videoContainer">
+   <video style="max-width: 100%;" id="myVideo" src="https://holden.com.au/resources/videos/Holden0616AccessoriesOverview_Loop_V01.mp4" controls autoplay>
+   </video>
+ </div>
+ <input type="button" value="Fullscreen" onclick="videoControl()"></input>
+
+
+
+
 
           </div>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-<style type="text/css">
-  
-#video_pop {
-    z-index: 9999; 
-    position: absolute; 
-    top: 0px; 
-    left: 0px; 
-    width: 100%; 
-    height: 100%; 
-    background: rgba(0,0,0,0.9); 
-    display: none;
-    cursor: pointer;
-}
-
-#the_Video {
-    width: 100%;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-
-}
-
-</style>
-
-        <div class="o-layout">
-          <div class="o-layout__item  u-1/1  u-tc">
-
-            <div id="video_pop"></div>
-
-            <a
-              class="o-icon-playbutton  o-icon-playbutton--l"
-              id="idForShadowClick342342342423"
-              onclick="onVideoClick('https://holden.com.au/resources/videos/Holden0616AccessoriesOverview_Loop_V01.webm');"
-              >
-            </a>
-
-        </div>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="o-layout">
-          <div class="o-layout__item  u-1/1">
-
-            <div is="hero-banner" inline-template>
-              <div v-cloak>
-
-                <div class="o-panel__video">
-                  <!-- hld-video -->
-                  <video 
-                    class="lazyload" 
-                    poster="" 
-                    controls 
-                    preload="" 
-                    loop="loop" 
-                    autoplay="autoplay" 
-                    muted="muted"
-                    auto-tag="video"
-                  >
-                    <source src="https://holden.com.au/resources/videos/Holden0616AccessoriesOverview_Loop_V01.webm" type='video/webm; codecs="vp8, vorbis"'>
-                    <source src="https://holden.com.au/resources/videos/Holden0616AccessoriesOverview_Loop_V01.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
-                  </video>
-                </div>
-
-                <div 
-                  class="o-panel__modal-fs" 
-                  :class="[privateData.videoActive ? 'active' : '']"
-                >
-                  <span 
-                    class="o-panel__modal-close  icon-cross" 
-                    @click.prevent="closeVideo()"
-                  >
-                  </span>
-                  $${privateData.videoFrame}$$
-                </div>
-
-              </div>
-            </div><!--/div-is -->
-
-
-
-          </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-<script type="text/javascript">
-
-var elem = document.getElementById("myvideo");
-if (elem.requestFullscreen) {
-  elem.requestFullscreen();
-}
-
-</script>
-
-<script type="text/javascript">
-
-function onVideoClick(theLink) {
-    document.getElementById("video_pop").innerHTML = "<video autoplay controls muted loop id=\"the_Video\"><source src=\""+theLink+"\" type=\"video/webm\"></video>";
-    document.getElementById("video_pop").style.display="block";
-} 
-
-function onPopClick() {
-    document.getElementById("video_pop").style.display="none";
-    document.getElementById("video_pop").innerHTML = ""; 
-}         
-
-var element = document.getElementById("video_pop");
-
-element.onclick = (function (onclick) {
-  return function(evt) {
-    // reference to event to pass argument properly
-    evt  = evt || event;
-
-    // onClick even still works in the DOM
-    if (onclick) {
-      onclick(evt);
-    }
-    // new code that will happen when you click only if you click on the background.
-     if (evt.target == element) { element.style.display="none"; } 
-  }
-})(element.onclick);
-
-</script>
-
-
+    </div>
+  </div>
 
 </body>
 </html>
