@@ -11,6 +11,7 @@
  function videoControl() {
     var myVideo = document.getElementById('myVideo');
     myVideo.webkitEnterFullscreen();
+    myVideo.play();
 }
    </script>
 
@@ -30,7 +31,7 @@
 
 
 
-  <div class="">
+  <div class="u-tc">
 
     <video 
       style="max-width: 100%;" 
@@ -42,7 +43,12 @@
     >
     </video>
 
-    <input type="button" value="Fullscreen" onclick="videoControl()"></input>
+    <button 
+      class="o-icon-playbutton  o-icon-playbutton--l"
+      onclick="videoControl()"
+    >
+      Fullscreen
+    </button>
 
   </div>
 
