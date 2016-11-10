@@ -8,10 +8,10 @@
   <title>Kitchen sink</title>
 
   <script type="text/javascript">
-    function videoControl() {
-      var myVideo = document.getElementById('myVideo');
-      myVideo.webkitEnterFullscreen();
-    }
+ function videoControl() {
+    var myVideo = document.getElementById('myVideo');
+    myVideo.webkitEnterFullscreen();
+}
    </script>
 
 </head>
@@ -29,19 +29,22 @@
 
 
 
-            <div class="">
-              <video 
-                style="max-width: 100%;" 
-                id="myVideo" 
-                src="https://holden.com.au/resources/videos/Holden0616AccessoriesOverview_Loop_V01.mp4" 
-                controls 
-                autoplay
-                loop
-              >
-              </video>
-            </div>
 
-            <input type="button" value="Fullscreen" onclick="videoControl()"></input>
+  <div class="">
+
+    <video 
+      style="max-width: 100%;" 
+      id="myVideo" 
+      src="https://holden.com.au/resources/videos/Holden0616AccessoriesOverview_Loop_V01.mp4" 
+      controls 
+      autoplay
+      loop
+    >
+    </video>
+
+    <input type="button" value="Fullscreen" onclick="videoControl()"></input>
+
+  </div>
 
 
 
