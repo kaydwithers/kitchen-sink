@@ -10,7 +10,9 @@
   <script type="text/javascript">
     function videoControl() {
       var myVideoContainer = document.getElementById('videoContainer');
-      myVideoContainer.webkitRequestFullscreen();
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      }
     }
    </script>
 
