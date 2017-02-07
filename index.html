@@ -816,6 +816,7 @@
         </div>
 
       </div>
+
     </div>
   </div>
   </script></code></pre>
@@ -1942,43 +1943,87 @@
 
           <div class="o-layout__item  u-1/1  u-mb-1">
             <p class="u-mb--25">.rf-c-btn  .rf-c-btn--1</p>
-            <a class="rf-c-btn  rf-c-btn--1">Button 1<i class="icon-arrow-right"></i></a>
+            <a class="rf-c-btn  rf-c-btn--1">
+              Button 1<i class="icon-arrow-right"></i>
+            </a>
           </div>
 
           <div class="o-layout__item  u-1/1  u-mb-1">
             <p class="u-mb--25">.rf-c-btn  .rf-c-btn--2</p>
-            <a class="rf-c-btn  rf-c-btn--2">Button 2<i class="icon-arrow-right"></i></a>
+            <a class="rf-c-btn  rf-c-btn--2">
+              Button 2<i class="icon-arrow-right"></i>
+            </a>
           </div>
 
           <div class="o-layout__item  u-1/1  u-mb-1">
             <p class="u-mb--25">.rf-c-btn  .rf-c-btn--3</p>
             <div class="u-bgcol-g6  u-p-1">
-              <a class="rf-c-btn  rf-c-btn--3">Button 3<i class="icon-arrow-right"></i></a>
+              <a class="rf-c-btn  rf-c-btn--3">
+                Button 3<i class="icon-arrow-right"></i>
+              </a>
             </div>
           </div>
 
           <div class="o-layout__item  u-1/1  u-mb-1">
             <p class="u-mb--25">.rf-c-btn  .rf-c-btn--1  .rf-c-btn--ghost</p>
             <div class="u-bgcol-g6  u-p-1">
-              <a class="rf-c-btn  rf-c-btn--1  rf-c-btn--ghost">Button 1 - Ghost<i class="icon-arrow-right"></i></a>
+              <a class="rf-c-btn  rf-c-btn--1  rf-c-btn--ghost">
+                Button 1 - Ghost<i class="icon-arrow-right"></i>
+              </a>
             </div>
           </div>
 
           <div class="o-layout__item  u-1/1  u-mb-1">
             <p class="u-mb--25">.rf-c-btn  .rf-c-btn--2  .rf-c-btn--ghost</p>
             <div class="u-bgcol-g6  u-p-1">
-              <a class="rf-c-btn  rf-c-btn--2  rf-c-btn--ghost">Button 2 - Ghost<i class="icon-arrow-right"></i></a>
+              <a class="rf-c-btn  rf-c-btn--2  rf-c-btn--ghost">
+                Button 2 - Ghost<i class="icon-arrow-right"></i>
+              </a>
             </div>
           </div>
 
           <div class="o-layout__item  u-1/1  u-mb-1">
-            <p class="u-mb--25">.rf-c-btn  .rf-c-btn--text  .rf-c-btn--s</p>
-            <a class="rf-c-btn  rf-c-btn--text  rf-c-btn--s">Button Text - Small<i class="icon-arrow-right"></i></a>
+            <p class="u-mb--25">.rf-c-btn  .rf-c-btn--text</p>
+            <a class="rf-c-btn  rf-c-btn--text">
+              Button Text<i class="icon-arrow-right"></i>
+            </a>
           </div>
 
           <div class="o-layout__item  u-1/1  u-mb-1">
-            <p class="u-mb--25">.rf-c-btn  .rf-c-btn--text</p>
-            <a class="rf-c-btn  rf-c-btn--text">Button Text<i class="icon-arrow-right"></i></a>
+            <p class="u-mb--25">.rf-c-btn  .rf-c-btn--text  .rf-c-btn--s</p>
+            <a class="rf-c-btn  rf-c-btn--text  rf-c-btn--s">
+              Button Text - Small<i class="icon-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="o-layout__item  u-1/1  u-mb-1">
+            <p class="u-mb--25">.rf-c-btn  .rf-c-btn--disclaimer</p>
+            <a class="rf-c-btn  rf-c-btn--disclaimer">
+              Button Disclaimer
+            </a>
+          </div>
+
+          <div class="o-layout__item  u-1/1  u-mb-1">
+            <p class="u-mb--25">.rf-c-btn  .rf-c-btn--tab</p>
+
+            <div class="rf-c-btn--tab-group  u-dis-if">
+              <button class="rf-c-btn  rf-c-btn--tab  u-1/4  is-active">
+                Button Tab A - is-active
+              </button>
+
+              <button class="rf-c-btn  rf-c-btn--tab  u-1/4">
+                Button Tab B
+              </button>
+
+              <button class="rf-c-btn  rf-c-btn--tab  u-1/4">
+                Button Tab C
+              </button>
+
+              <button class="rf-c-btn  rf-c-btn--tab  u-1/4">
+                Button Tab D
+              </button>
+            </div>
+
           </div>
 
           <div class="o-layout__item  u-1/1  u-mb-1">
@@ -1989,6 +2034,116 @@
         </div>
       </section>
 
+
+
+
+
+      <section class="o-page  u-mb-3" id="inputs">
+        <div class="o-layout">
+
+          <div class="o-layout__item  u-1/1">
+            <h3>Inputs</h3>
+          </div>
+
+          <div class="o-layout__item  u-1/3">
+
+            <div class="o-form__item">
+              <label class="o-form__label" for="input-1">
+                Input
+              </label>
+              <p class="o-form__text-help">Input help text</p>
+              <input 
+                class="o-form__input" 
+                placeholder="Input placeholder" 
+                name="input-1" 
+                type="text"
+              >
+            </div>
+
+            <div class="o-form__item">
+              <label class="o-form__label" for="input-disabled">
+                Input disabled
+              </label>
+              <input 
+                class="o-form__input" 
+                placeholder="Input placeholder" 
+                name="input-disabled" 
+                type="text"
+                disabled
+              >
+            </div>
+
+            <div class="o-form__item  o-form__item--success">
+              <label class="o-form__label" for="input-2">
+                Input success
+              </label>
+              <span class="icon-i-check"></span>
+              <input 
+                class="o-form__input" 
+                placeholder="Input placeholder" 
+                name="input-2" 
+                type="text"
+              >
+            </div>
+
+            <div class="o-form__item  o-form__item--error">
+              <label class="o-form__label" for="input-3">
+                Input error
+              </label>
+              <input 
+                class="o-form__input" 
+                placeholder="Input placeholder" 
+                name="input-3" 
+                type="text"
+              >
+              <p class="o-form__text-error">Please enter an address.</p>
+            </div>
+
+            <div class="o-form__item">
+              <label class="o-form__label" for="textarea-1">
+                Textarea
+              </label>
+              <textarea class="o-form__textarea" placeholder="Textarea placeholder" name="textarea-1"></textarea>
+            </div>
+
+            <div class="o-form__item">
+              <div class="o-form__select">
+                <span class="icon-arrow-down"></span>
+                <select>
+                  <option value="">Select State</option>
+                  <option value="ACT">Australian Capital Territory</option>
+                  <option value="NSW">New South Wales</option>
+                  <option value="NT">Northern Territory</option>
+                  <option value="QLD">Queensland</option>
+                  <option value="SA">South Australia</option>
+                  <option value="TAS">Tasmania</option>
+                  <option value="VIC">Victoria</option>
+                  <option value="WA">Western Australia</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="o-form__item">
+              <div class="u-mb--5">
+                <input type="radio" id="radio-1" name="radio-select">
+                <label class="o-form__label" for="radio-1">Input radio A</label>
+              </div>
+
+              <div class="">
+                <input type="radio" id="radio-2" name="radio-select">
+                <label class="o-form__label" for="radio-2">Input radio B</label>
+              </div>
+            </div>
+
+            <div class="o-form__item">
+              <input id="checkbox-1" type="checkbox">
+              <label class="o-form__label" for="checkbox-1">Input checkbox</label>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
 
 
 
@@ -2414,6 +2569,7 @@
 
             <h5>Presentations</h5>
             <ul class="o-list-block---25  u-mb-2">
+              <li class="o-list-block__item"><a href="https://youtu.be/pBBSp_iIiVM">Evan You's talk on design decisions behind Vue.js</a></li>
               <li class="o-list-block__item"><a href="https://youtu.be/1OKZOV-iLj4">Harry Robert's ITCSS Presentation</a></li>
               <li class="o-list-block__item"><a href="http://pugbike.com/itcss-presentation/">ITCSS Lightning Talk</a></li>
             </ul>
